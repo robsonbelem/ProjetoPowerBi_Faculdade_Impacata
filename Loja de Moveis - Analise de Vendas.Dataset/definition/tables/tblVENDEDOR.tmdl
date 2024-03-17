@@ -56,7 +56,7 @@ table tblVENDEDOR
 		mode: import
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\robso\OneDrive\Área de Trabalho\PROJETO POWER BI IMPACTA\baseVendas_Normalizado.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\robso\OneDrive\Área de Trabalho\PROJETO POWER BI IMPACTA\ProjetoPowerBi_Faculdade_Impacata\baseVendas_Normalizado.xlsx"), null, true),
 				    tblVENDEDOR_Table = Fonte{[Item="tblVENDEDOR",Kind="Table"]}[Data],
 				    #"Tipo Alterado" = Table.TransformColumnTypes(tblVENDEDOR_Table,{{"idVendedor", Int64.Type}, {"nomeVendedor", type text}, {"estadoCivil", type text}, {"Genero", type text}, {"Idade", Int64.Type}, {"Loja", Int64.Type}})
 				in

@@ -53,7 +53,7 @@ table tblPRODUTO
 		mode: import
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\robso\OneDrive\Área de Trabalho\PROJETO POWER BI IMPACTA\baseVendas_Normalizado.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\robso\OneDrive\Área de Trabalho\PROJETO POWER BI IMPACTA\ProjetoPowerBi_Faculdade_Impacata\baseVendas_Normalizado.xlsx"), null, true),
 				    tblPRODUTO_Table = Fonte{[Item="tblPRODUTO",Kind="Table"]}[Data],
 				    #"Tipo Alterado" = Table.TransformColumnTypes(tblPRODUTO_Table,{{"idProduto", Int64.Type}, {"descricaoProduto", type text}, {"custoUnitario", Currency.Type}, {"precoVenda", Currency.Type}, {"Fornecedor", Int64.Type}})
 				in
