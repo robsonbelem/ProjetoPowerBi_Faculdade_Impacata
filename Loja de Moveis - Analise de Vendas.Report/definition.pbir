@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Loja de Moveis - Analise de Vendas.Dataset"
+    },
+    "byConnection": null
+  }
+}
